@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FF4CDFA9-C9F9-49EF-9A93-38BC37DE96BF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MCModalViewDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E72C48C9-021A-4FFD-A396-F501DBC2D1CE</key>
+		<string>ssh://github.com/matthewcheok/MCAlertView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MCModalViewDemo/MCModalViewDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E72C48C9-021A-4FFD-A396-F501DBC2D1CE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/matthewcheok/MCAlertView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E72C48C9-021A-4FFD-A396-F501DBC2D1CE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E72C48C9-021A-4FFD-A396-F501DBC2D1CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MCAlertView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

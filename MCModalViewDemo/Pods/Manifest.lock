@@ -1,0 +1,14 @@
+PODS:
+  - MCModalView (0.2)
+
+DEPENDENCIES:
+  - MCModalView (from `../`)
+
+EXTERNAL SOURCES:
+  MCModalView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MCModalView: 044374a529e520165ea6a25ff9eb8122c8703111
+
+COCOAPODS: 0.33.1
