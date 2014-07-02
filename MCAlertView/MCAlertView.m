@@ -99,13 +99,28 @@ static CGFloat const kMCAlertViewMotionOffset = 15;
 	} completion:nil];
 
 	[alertView sizeToFit];
+	[alertView layoutIfNeeded];
+
 	[self.window addSubview:alertView];
 
 	CGRect bounds = self.window.bounds;
-	alertView.center = CGPointMake(floorf(CGRectGetWidth(bounds) / 2.f), -floorf(CGRectGetHeight(alertView.frame) / 2.f));
+	CGFloat centerY = alertView.actionButton ? CGRectGetMidY(alertView.actionButton.frame) : CGRectGetMidY(alertView.cancelButton.frame);
 
-	[UIView animateWithDuration:0.5f delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:UIViewAnimationOptionBeginFromCurrentState animations: ^{
-	    alertView.center = CGPointMake(floorf(CGRectGetWidth(bounds) / 2.f), floorf(CGRectGetHeight(bounds) / 2.f));
+	alertView.center = CGPointMake(floorf(CGRectGetWidth(bounds) / 2.f), -floorf(CGRectGetHeight(alertView.frame) / 2.f));
+    alertView.actionButton.center = CGPointMake(CGRectGetMidX(alertView.actionButton.frame), centerY-50);
+    alertView.cancelButton.center = CGPointMake(CGRectGetMidX(alertView.cancelButton.frame), centerY-50);
+	alertView.transform = CGAffineTransformMakeScale(1.0, 1.4);
+	alertView.layer.anchorPoint = CGPointMake(0.5, 1);
+
+	[UIView animateWithDuration:0.8 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:UIViewAnimationOptionBeginFromCurrentState animations: ^{
+	    alertView.center = CGPointMake(floorf(CGRectGetWidth(bounds) / 2.f), floorf(CGRectGetHeight(bounds) / 2.f) + CGRectGetHeight(alertView.bounds) / 2);
+	} completion: ^(BOOL finished) {
+	}];
+
+	[UIView animateWithDuration:0.8 delay:0.1 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:UIViewAnimationOptionBeginFromCurrentState animations: ^{
+	    alertView.transform = CGAffineTransformIdentity;
+	    alertView.actionButton.center = CGPointMake(CGRectGetMidX(alertView.actionButton.frame), centerY);
+	    alertView.cancelButton.center = CGPointMake(CGRectGetMidX(alertView.cancelButton.frame), centerY);
 	} completion: ^(BOOL finished) {
 	}];
 }
@@ -131,7 +146,7 @@ static CGFloat const kMCAlertViewMotionOffset = 15;
 
 	CGRect bounds = self.window.bounds;
 	[UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationCurveEaseIn animations: ^{
-	    alertView.center = CGPointMake(floorf(CGRectGetWidth(bounds) / 2.f), CGRectGetHeight(bounds) + floorf(CGRectGetHeight(alertView.frame) / 2.f));
+	    alertView.center = CGPointMake(floorf(CGRectGetWidth(bounds) / 2.f), CGRectGetHeight(bounds) + floorf(1.5*CGRectGetHeight(alertView.frame)));
 
 	    CGFloat angle = floorf(drand48() * kMCAlertViewAngleRange * 2) - kMCAlertViewAngleRange;
 	    alertView.transform = CGAffineTransformMakeRotation(angle / 180 * M_PI);
