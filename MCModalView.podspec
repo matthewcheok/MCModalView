@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MCModalView'
-  s.version  = '0.2'
+  s.version  = '0.2.1'
   s.platform = :ios, '7.0'
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
   s.summary  = 'UIAlertView/UIActionSheet replacement supporting iPhone/iPad and device rotations.'

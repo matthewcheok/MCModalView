@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>FF4CDFA9-C9F9-49EF-9A93-38BC37DE96BF</string>
+	<string>A9991839-0135-46B8-BE52-98E3C9283A3D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MCModalViewDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E72C48C9-021A-4FFD-A396-F501DBC2D1CE</key>
-		<string>ssh://github.com/matthewcheok/MCAlertView.git</string>
+		<key>0B447CA8-2C6D-495F-900A-23915007E6B0</key>
+		<string>ssh://github.com/matthewcheok/MCModalView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MCModalViewDemo/MCModalViewDemo.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E72C48C9-021A-4FFD-A396-F501DBC2D1CE</key>
+		<key>0B447CA8-2C6D-495F-900A-23915007E6B0</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/matthewcheok/MCAlertView.git</string>
+	<string>ssh://github.com/matthewcheok/MCModalView.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E72C48C9-021A-4FFD-A396-F501DBC2D1CE</string>
+	<string>0B447CA8-2C6D-495F-900A-23915007E6B0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E72C48C9-021A-4FFD-A396-F501DBC2D1CE</string>
+			<string>0B447CA8-2C6D-495F-900A-23915007E6B0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>MCAlertView</string>
+			<string>MCModalView</string>
 		</dict>
 	</array>
 </dict>
