@@ -22,6 +22,7 @@
 		341316BD19493BA000E659F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3413169F19493BA000E659F8 /* UIKit.framework */; };
 		341316C519493BA000E659F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 341316C319493BA000E659F8 /* InfoPlist.strings */; };
 		341316C719493BA000E659F8 /* MCModalViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 341316C619493BA000E659F8 /* MCModalViewDemoTests.m */; };
+		9E7595851B5F4041009A1BB1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7595841B5F4041009A1BB1 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		341316C219493BA000E659F8 /* MCModalViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCModalViewDemoTests-Info.plist"; sourceTree = "<group>"; };
 		341316C419493BA000E659F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		341316C619493BA000E659F8 /* MCModalViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCModalViewDemoTests.m; sourceTree = "<group>"; };
+		9E7595841B5F4041009A1BB1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B66CE380D33642B4BC384088 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E812BBF5E6DC4666A9DC8327 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,7 +120,6 @@
 		341316A119493BA000E659F8 /* MCModalViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				341316DA194950F200E659F8 /* iPad */,
 				341316AA19493BA000E659F8 /* MCAppDelegate.h */,
 				341316AB19493BA000E659F8 /* MCAppDelegate.m */,
 				341316AD19493BA000E659F8 /* Main.storyboard */,
@@ -126,6 +127,7 @@
 				341316B119493BA000E659F8 /* MCViewController.m */,
 				341316B319493BA000E659F8 /* Images.xcassets */,
 				341316A219493BA000E659F8 /* Supporting Files */,
+				9E7595841B5F4041009A1BB1 /* Launch Screen.storyboard */,
 			);
 			path = MCModalViewDemo;
 			sourceTree = "<group>";
@@ -157,13 +159,6 @@
 				341316C319493BA000E659F8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		341316DA194950F200E659F8 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +208,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MC;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Matthew Cheok";
 				TargetAttributes = {
 					341316B819493BA000E659F8 = {
@@ -247,6 +242,7 @@
 			files = (
 				341316B419493BA000E659F8 /* Images.xcassets in Resources */,
 				341316A619493BA000E659F8 /* InfoPlist.strings in Resources */,
+				9E7595851B5F4041009A1BB1 /* Launch Screen.storyboard in Resources */,
 				341316AF19493BA000E659F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +365,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -383,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -415,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -430,7 +427,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCModalViewDemo/MCModalViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/MCModalViewDemo/MCModalViewDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MCModalViewDemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -446,7 +444,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCModalViewDemo/MCModalViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/MCModalViewDemo/MCModalViewDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MCModalViewDemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
